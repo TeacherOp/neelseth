@@ -34,9 +34,9 @@ export default function Experience() {
                   <div className="flex flex-wrap justify-between items-start mb-4">
                     <div className="flex gap-4">
                       <div className="flex-shrink-0">
-                        {(exp as any).logo ? (
+                        {exp.logo ? (
                           <Image
-                            src={(exp as any).logo}
+                            src={exp.logo}
                             alt={exp.company}
                             width={48}
                             height={48}
@@ -51,9 +51,9 @@ export default function Experience() {
                       <div>
                         <h3 className="text-xl font-bold">{exp.position}</h3>
                         <div className="flex items-center gap-2 text-muted-foreground mt-1">
-                          {(exp as any).companyUrl ? (
+                          {exp.companyUrl ? (
                             <a
-                              href={(exp as any).companyUrl}
+                              href={exp.companyUrl}
                               target="_blank"
                               {...(exp.company === "ReplyDaddy" || exp.company === "Teacherop" || exp.company === "Shipstation.ai"
                                 ? {}

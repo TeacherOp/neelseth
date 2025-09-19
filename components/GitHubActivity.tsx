@@ -6,12 +6,18 @@ import { Tooltip as ReactTooltip } from "react-tooltip"
 import "react-tooltip/dist/react-tooltip.css"
 
 export default function GitHubActivity() {
-  const selectLastHalfYear = (contributions: any) => {
+  interface Activity {
+    date: string
+    count: number
+    level: 0 | 1 | 2 | 3 | 4
+  }
+
+  const selectLastHalfYear = (contributions: Activity[]) => {
     const currentYear = new Date().getFullYear()
     const currentMonth = new Date().getMonth()
     const shownMonths = 6
 
-    return contributions.filter((activity: any) => {
+    return contributions.filter((activity: Activity) => {
       const date = new Date(activity.date)
       const monthOfDay = date.getMonth()
 

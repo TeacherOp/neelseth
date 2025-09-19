@@ -1,3 +1,5 @@
+import type { Experience, Project, Education, OpenSourceRepo, Blog } from './types'
+
 export const personalInfo = {
   name: "Neel Seth",
   title: "Product Developer",
@@ -12,7 +14,7 @@ export const personalInfo = {
   calendlyLink: "https://calendly.com/neelseth"
 }
 
-export const experiences = [
+export const experiences: Experience[] = [
   {
     id: 1,
     company: "ReplyDaddy",
@@ -175,7 +177,7 @@ export const experiences = [
   }
 ]
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "ReplyDaddy",
     description: "AI-powered Reddit marketing co-pilot with lead scoring engine",
@@ -221,7 +223,7 @@ export const projects = [
   }
 ]
 
-export const education = [
+export const education: Education[] = [
   {
     institution: "SRM Institute of Science and Technology",
     degree: "Bachelor of Technology",
@@ -267,7 +269,7 @@ export const skills = {
   ]
 }
 
-export const opensource = [
+export const opensource: OpenSourceRepo[] = [
   {
     title: "BlogBuilder",
     description: "An automated blog generation tool that creates SEO-optimized content",
@@ -280,7 +282,7 @@ export const opensource = [
   }
 ]
 
-export const blogs = [
+export const blogs: Blog[] = [
   {
     title: "The End of UI: Why We Won't Need Traditional Interfaces Anymore",
     description: "Understanding why UI was a workaround for technological limitations and how LLMs are making traditional interfaces obsolete.",

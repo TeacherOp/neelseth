@@ -15,7 +15,7 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold text-center mb-12">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
 
           <div className="max-w-2xl mx-auto">
@@ -26,7 +26,7 @@ export default function Contact() {
               className="bg-card border rounded-lg p-8 text-center"
             >
               <p className="text-lg text-muted-foreground mb-8">
-                I'm always open to discussing new opportunities, collaborations,
+                I&apos;m always open to discussing new opportunities, collaborations,
                 or just having a great conversation about technology and
                 innovation.
               </p>

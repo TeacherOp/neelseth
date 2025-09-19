@@ -28,9 +28,9 @@ export default function Projects() {
                 className="bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-shadow group"
               >
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20">
-                  {(project as any).banner ? (
+                  {project.banner ? (
                     <Image
-                      src={(project as any).banner}
+                      src={project.banner}
                       alt={project.title}
                       fill
                       className="object-cover"
@@ -51,9 +51,9 @@ export default function Projects() {
 
                 <div className="p-6">
                   <div className="flex items-start gap-3 mb-3">
-                    {(project as any).logo && (
+                    {project.logo && (
                       <Image
-                        src={(project as any).logo}
+                        src={project.logo}
                         alt={project.title}
                         width={32}
                         height={32}

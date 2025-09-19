@@ -27,9 +27,9 @@ export default function Education() {
                 className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-start justify-between mb-4">
-                  {(edu as any).logo ? (
+                  {edu.logo ? (
                     <Image
-                      src={(edu as any).logo}
+                      src={edu.logo}
                       alt={edu.institution}
                       width={48}
                       height={48}
