@@ -1,11 +1,27 @@
 "use client"
 
+import { useState } from "react"
 import { motion } from "framer-motion"
 import { blogs } from "@/lib/data"
 import { Calendar, Clock, ExternalLink, BookOpen } from "lucide-react"
 import Link from "next/link"
+import BlogArticleModal from "./BlogArticleModal"
+import type { Blog } from "@/lib/types"
 
 export default function Blogs() {
+  const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openBlogModal = (blog: Blog) => {
+    setSelectedBlog(blog)
+    setIsModalOpen(true)
+  }
+
+  const closeBlogModal = () => {
+    setIsModalOpen(false)
+    setTimeout(() => setSelectedBlog(null), 300) // Delay to allow exit animation
+  }
+
   return (
     <section id="blogs" className="py-20 px-6 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
@@ -78,10 +94,7 @@ export default function Blogs() {
                   ) : (
                     <button
                       className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
-                      onClick={() => {
-                        // You can implement a modal or expand view here
-                        alert("Full article view coming soon!")
-                      }}
+                      onClick={() => openBlogModal(blog)}
                     >
                       <BookOpen className="w-4 h-4" />
                       Read Article
@@ -93,6 +106,12 @@ export default function Blogs() {
           </div>
         </motion.div>
       </div>
+
+      <BlogArticleModal
+        blog={selectedBlog}
+        isOpen={isModalOpen}
+        onClose={closeBlogModal}
+      />
     </section>
   )
 }

@@ -15,8 +15,8 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Experience />
-      <Education />
       <Projects />
+      <Education />
       <OpenSource />
       <Blogs />
       <GitHubActivity />
