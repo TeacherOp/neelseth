@@ -11,7 +11,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/neel-seth-323827138/",
     x: "https://x.com/NeelSeth7"
   },
-  calendlyLink: "https://calendly.com/neelseth"
+  calendlyLink: "https://calendly.com/neelseth48/30-min-meeting"
 }
 
 export const experiences: Experience[] = [

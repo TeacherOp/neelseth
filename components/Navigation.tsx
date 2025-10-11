@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { personalInfo } from "@/lib/data"
 
 export default function Navigation() {
   const navItems = [
@@ -36,7 +37,7 @@ export default function Navigation() {
           ))}
         </div>
         <Link
-          href="https://calendly.com/neelseth"
+          href={personalInfo.calendlyLink}
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
