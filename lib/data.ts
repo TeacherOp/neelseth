@@ -252,12 +252,11 @@ export const education: Education[] = [
 
 export const skills = {
   technical: [
-    "React.js", "Next.js", "TypeScript", "Python", "Flask",
-    "Node.js", "Supabase", "PostgreSQL", "Tavily", "Coolify", "Agent Farmeworks"
+    "React.js", "Python", "Flask", "Supabase", "PostgreSQL", "Tavily", "Coolify", "Agent Frameworks"
   ],
   ai: [
     "LLM", "Anthropic Claude", "OpenAI GPT", "Prompt Engineering",
-    "AI Integration", "Natural Language Processing"
+    "AI Integration"
   ],
   product: [
     "Product Strategy", "User Research", "A/B Testing",

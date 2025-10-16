@@ -6,8 +6,8 @@ import { Code2, Brain, Package, TrendingUp } from "lucide-react"
 
 export default function Skills() {
   const categories = [
-    { title: "Vibe Coding in depth", icon: Code2, skills: skills.technical },
-    { title: "AI & Machine Learning", icon: Brain, skills: skills.ai },
+    { title: "Learning how to code, While Vibe Coding", icon: Code2, skills: skills.technical },
+    { title: "Using llms", icon: Brain, skills: skills.ai },
     { title: "Product Management", icon: Package, skills: skills.product },
     { title: "Business & Growth", icon: TrendingUp, skills: skills.business }
   ]
