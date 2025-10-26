@@ -113,6 +113,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="X4ubXnxk4oJPtSskbphD7A"
+          async
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
