@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://neelseth.com'),
   title: "Neel Seth - Founder & Product Leader | ReplyDaddy, Teacherop, Shipstation.ai",
   description: "Serial entrepreneur and product leader with expertise in AI-powered platforms, SaaS, and e-commerce. Building ReplyDaddy (AI Reddit marketing), Teacherop (adaptive learning), and Shipstation.ai (AI website builder). 10+ years scaling products from 0 to millions of users.",
   keywords: "Neel Seth, Product Developer, Founder, ReplyDaddy, Teacherop, Shipstation.ai, AI Products, SaaS, Bengaluru, Product Management, Entrepreneurship, Reddit Marketing AI, EdTech, Website Builder",

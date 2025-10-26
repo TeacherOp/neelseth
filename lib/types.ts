@@ -46,6 +46,7 @@ export interface OpenSourceRepo {
 
 export interface Blog {
   title: string
+  slug: string
   description: string
   date: string
   readTime: string
@@ -53,4 +54,5 @@ export interface Blog {
   platform: string
   featured?: boolean
   content?: string
+  tags?: string[]
 }

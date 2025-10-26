@@ -1,27 +1,11 @@
 "use client"
 
-import { useState } from "react"
 import { motion } from "framer-motion"
 import { blogs } from "@/lib/data"
 import { Calendar, Clock, ExternalLink, BookOpen } from "lucide-react"
 import Link from "next/link"
-import BlogArticleModal from "./BlogArticleModal"
-import type { Blog } from "@/lib/types"
 
 export default function Blogs() {
-  const [selectedBlog, setSelectedBlog] = useState<Blog | null>(null)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const openBlogModal = (blog: Blog) => {
-    setSelectedBlog(blog)
-    setIsModalOpen(true)
-  }
-
-  const closeBlogModal = () => {
-    setIsModalOpen(false)
-    setTimeout(() => setSelectedBlog(null), 300) // Delay to allow exit animation
-  }
-
   return (
     <section id="blogs" className="py-20 px-6 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
@@ -61,6 +45,19 @@ export default function Blogs() {
                   )}
                 </div>
 
+                {blog.tags && blog.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {blog.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-1 text-xs bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400 rounded-full font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
                 <h3 className="text-xl font-bold mb-2 hover:text-primary transition-colors">
                   {blog.title}
                 </h3>
@@ -92,13 +89,13 @@ export default function Blogs() {
                       Read More
                     </Link>
                   ) : (
-                    <button
+                    <Link
+                      href={`/blog/${blog.slug}`}
                       className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
-                      onClick={() => openBlogModal(blog)}
                     >
                       <BookOpen className="w-4 h-4" />
                       Read Article
-                    </button>
+                    </Link>
                   )}
                 </div>
               </motion.div>
@@ -106,12 +103,6 @@ export default function Blogs() {
           </div>
         </motion.div>
       </div>
-
-      <BlogArticleModal
-        blog={selectedBlog}
-        isOpen={isModalOpen}
-        onClose={closeBlogModal}
-      />
     </section>
   )
 }
