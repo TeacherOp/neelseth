@@ -3,10 +3,11 @@ import type { Metadata } from 'next'
 import { Calendar, Clock, BookOpen, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { blogs } from '@/lib/data'
+import type { ReactElement } from 'react'
 
 // Helper function to render text with bold formatting and links
 const renderTextWithFormatting = (text: string) => {
-  const parts: (string | JSX.Element)[] = []
+  const parts: (string | ReactElement)[] = []
   let currentIndex = 0
   let key = 0
 

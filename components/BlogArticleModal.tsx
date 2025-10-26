@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, type ReactElement } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X, Calendar, Clock, BookOpen } from "lucide-react"
 import type { Blog } from "@/lib/types"
@@ -13,7 +13,7 @@ interface BlogArticleModalProps {
 
 // Helper function to render text with bold formatting and links
 const renderTextWithFormatting = (text: string) => {
-  const parts: (string | JSX.Element)[] = []
+  const parts: (string | ReactElement)[] = []
   let currentIndex = 0
   let key = 0
 
