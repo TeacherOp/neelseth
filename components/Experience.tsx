@@ -14,7 +14,7 @@ export default function Experience() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12">Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Work Experience</h2>
 
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border" />

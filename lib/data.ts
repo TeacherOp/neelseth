@@ -220,6 +220,22 @@ export const projects: Project[] = [
     link: "https://trekkit.in/",
     featured: false,
     banner: "/trekkitbanner.png"
+  },
+  {
+    title: "Bot9.ai",
+    description: "AI chatbot builder automating 90% of customer support & sales",
+    tech: ["AI/ML", "Multi-channel", "150+ Languages", "No-code"],
+    link: "https://bot9.ai",
+    featured: false,
+    banner: "/bot9.jpeg"
+  },
+  {
+    title: "Rollout.site",
+    description: "AI-powered website builder - idea to live site in 3 minutes",
+    tech: ["Claude AI", "Next.js", "No-code", "Multi-language"],
+    link: "https://rollout.site",
+    featured: false,
+    banner: "/rollout.jpeg"
   }
 ]
 

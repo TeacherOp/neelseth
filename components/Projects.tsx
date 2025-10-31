@@ -33,7 +33,7 @@ export default function Projects() {
                       src={project.banner}
                       alt={project.title}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
