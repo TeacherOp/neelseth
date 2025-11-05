@@ -236,6 +236,14 @@ export const projects: Project[] = [
     link: "https://rollout.site",
     featured: false,
     banner: "/rollout.jpeg"
+  },
+  {
+    title: "Teacherop(Neel) Free AI Course Powered by GrowthX",
+    description: "Free comprehensive course teaching non-developers how to build AI tools with Claude's API - from beginner to advanced",
+    tech: ["Python", "Claude API", "Free Learning Resource", "AI Education"],
+    link: "https://github.com/TeacherOp/growthx_1",
+    featured: true,
+    banner: "/growthx-banner.png"
   }
 ]
 
@@ -323,6 +331,16 @@ export const opensource: OpenSourceRepo[] = [
     language: "Python",
     topics: ["automation", "blog", "content-generation", "seo"],
     link: "https://github.com/TeacherOp/blogbuilder",
+    featured: true
+  },
+  {
+    title: "Teacherop(Neel) Free AI Course Powered by GrowthX",
+    description: "Free comprehensive course teaching non-developers how to build AI tools with Claude's API - from beginner to advanced with practical examples",
+    stars: 3,
+    forks: 0,
+    language: "Python",
+    topics: ["ai", "claude-api", "anthropic", "education", "free-course", "beginner-friendly", "ai-agents"],
+    link: "https://github.com/TeacherOp/growthx_1",
     featured: true
   }
 ]
