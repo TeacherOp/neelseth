@@ -9,7 +9,7 @@ export const personalInfo = {
   socials: {
     github: "https://github.com/TeacherOp",
     linkedin: "https://www.linkedin.com/in/neel-seth-323827138/",
-    x: "https://x.com/NeelSeth7"
+    x: "https://x.com/neelseth"
   },
   calendlyLink: "https://calendly.com/neelseth48/30-min-meeting"
 }

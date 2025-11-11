@@ -87,7 +87,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: 'summary_large_image',
       title: blog.title,
       description: blog.description,
-      creator: '@NeelSeth7',
+      creator: '@neelseth',
     },
     alternates: {
       canonical: `https://neelseth.com/blog/${blog.slug}`,

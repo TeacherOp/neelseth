@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Neel Seth - Founder & Product Leader",
     description: "Serial entrepreneur building AI-powered platforms. Founder of ReplyDaddy, Teacherop, and Shipstation.ai.",
-    creator: "@NeelSeth7",
+    creator: "@neelseth",
     images: ["/neelprofileimage.jpeg"],
   },
   alternates: {
@@ -94,7 +94,7 @@ export default function RootLayout({
     "sameAs": [
       "https://github.com/TeacherOp",
       "https://www.linkedin.com/in/neel-seth-323827138/",
-      "https://x.com/NeelSeth7"
+      "https://x.com/neelseth"
     ],
     "email": "neelseth48@gmail.com",
     "address": {
