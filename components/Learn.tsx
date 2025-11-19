@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { learnSessions } from "@/lib/data"
 import { Calendar, Clock, Github, BookOpen, Play, Users, ExternalLink } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function Learn() {
   return (
@@ -16,7 +15,7 @@ export default function Learn() {
           viewport={{ once: true }}
         >
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-3">Learn AI Development</h2>
+            <h2 className="text-4xl font-bold mb-3">Learn how to build AI tools & Agents</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Join my comprehensive workshop series on building AI tools and agents - designed specifically for non-developers.
               Learn practical skills to leverage AI in your business and projects.
@@ -182,7 +181,7 @@ export default function Learn() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-secondary/50 rounded-lg p-4">
-                <h4 className="font-semibold mb-2">What You'll Learn</h4>
+                <h4 className="font-semibold mb-2">What You&apos;ll Learn</h4>
                 <ul className="space-y-1 text-sm text-muted-foreground">
                   <li>• Build AI agents without prior coding experience</li>
                   <li>• Integrate APIs and manage conversation context</li>

@@ -144,7 +144,7 @@ export default function Testimonials() {
               <Filter className="w-4 h-4 text-muted-foreground" />
               <select
                 value={selectedSession}
-                onChange={(e) => setSelectedSession(e.target.value === 'all' ? 'all' : Number(e.target.value))}
+                onChange={(e) => setSelectedSession(e.target.value === 'all' ? 'all' : Number(e.target.value) as 1 | 2)}
                 className="px-3 py-1.5 rounded-lg border bg-background text-sm"
               >
                 <option value="all">All Sessions ({testimonials.length})</option>
@@ -248,7 +248,7 @@ export default function Testimonials() {
                   {/* Review Content */}
                   {testimonial.content ? (
                     <p className="text-sm text-muted-foreground italic line-clamp-6">
-                      "{testimonial.content}"
+                      &ldquo;{testimonial.content}&rdquo;
                     </p>
                   ) : (
                     <p className="text-sm text-muted-foreground/50 italic">
