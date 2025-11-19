@@ -7,15 +7,15 @@ import Link from "next/link"
 
 export default function Blogs() {
   return (
-    <section id="blogs" className="py-20 px-6 bg-secondary/30">
+    <section id="blogs" className="py-12 px-6 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-4">Writings & Thoughts</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-3">Writings & Thoughts</h2>
+          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
             Sharing insights on technology, entrepreneurship, and product development
           </p>
 

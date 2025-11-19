@@ -33,20 +33,20 @@ export default function OpenSource() {
   }
 
   return (
-    <section id="opensource" className="py-20 px-6">
+    <section id="opensource" className="py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-4">Github Activity</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-3">Github Activity</h2>
+          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
             Some of my public repos, live projects, practice code and small experiments!
           </p>
 
           {/* GitHub Activity Calendar */}
-          <div className="bg-card border rounded-lg p-6 mb-12 overflow-x-auto">
+          <div className="bg-card border rounded-lg p-6 mb-8 overflow-x-auto">
             <div className="w-full max-w-4xl mx-auto">
               <h3 className="text-lg font-semibold mb-4 flex items-center justify-center gap-2">
                 <Github className="w-5 h-5" />

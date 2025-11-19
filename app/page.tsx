@@ -3,6 +3,8 @@ import Hero from "@/components/Hero"
 import Experience from "@/components/Experience"
 import Education from "@/components/Education"
 import Projects from "@/components/Projects"
+import Learn from "@/components/Learn"
+import Testimonials from "@/components/Testimonials"
 import OpenSource from "@/components/OpenSource"
 import Blogs from "@/components/Blogs"
 import Skills from "@/components/Skills"
@@ -15,6 +17,8 @@ export default function Home() {
       <Hero />
       <Experience />
       <Projects />
+      <Learn />
+      <Testimonials />
       <Education />
       <OpenSource />
       <Blogs />

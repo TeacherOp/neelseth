@@ -56,3 +56,30 @@ export interface Blog {
   content?: string
   tags?: string[]
 }
+
+export interface LearnSession {
+  id: number
+  title: string
+  description: string
+  date?: string
+  status: 'completed' | 'upcoming'
+  videoUrl?: string
+  githubUrl?: string
+  notesUrl?: string
+  topics: string[]
+  technologies: string[]
+  duration?: string
+}
+
+export interface Testimonial {
+  id: number
+  name: string
+  designation: string
+  company?: string
+  content: string
+  linkedinUrl: string
+  avatar?: string
+  sessionId?: number
+  rating: number
+  date: string
+}

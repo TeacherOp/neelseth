@@ -7,14 +7,14 @@ import { personalInfo } from "@/lib/data"
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6">
+    <section id="contact" className="py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-4xl font-bold text-center mb-8">
             Let&apos;s Connect
           </h2>
 

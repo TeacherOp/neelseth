@@ -8,7 +8,7 @@ import { personalInfo } from "@/lib/data"
 
 export default function Hero() {
   return (
-    <section className="h-[80vh] flex items-center justify-center px-6 pt-20">
+    <section className="h-[70vh] flex items-center justify-center px-6 pt-16">
       <div className="max-w-7xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

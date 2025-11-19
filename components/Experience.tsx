@@ -7,14 +7,14 @@ import Image from "next/image"
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-6">
+    <section id="experience" className="py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12">Work Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">Work Experience</h2>
 
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border" />
@@ -26,7 +26,7 @@ export default function Experience() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="relative mb-12 ml-16"
+                className="relative mb-8 ml-16"
               >
                 <div className="absolute -left-8 w-4 h-4 bg-primary rounded-full" />
 
