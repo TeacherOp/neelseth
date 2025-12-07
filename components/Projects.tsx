@@ -16,10 +16,10 @@ export default function Projects() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Things I've Built
+            Things I&apos;ve Built
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Products, tools, and experiments. Some succeeded, some didn't. All taught me something.
+            Products, tools, and experiments. Some succeeded, some didn&apos;t. All taught me something.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">

@@ -23,7 +23,7 @@ export default function Learn() {
               Learn how to build AI tools & Agents
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I didn't plan to teach. I just shared how I was building with AI-and it turned into a free course.
+              I didn&apos;t plan to teach. I just shared how I was building with AI-and it turned into a free course.
             </p>
 
             <motion.div

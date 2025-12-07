@@ -25,7 +25,7 @@ export default function Outcomes() {
             Proof, Not Promises
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Numbers that show what I've actually built and scaled
+            Numbers that show what I&apos;ve actually built and scaled
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
