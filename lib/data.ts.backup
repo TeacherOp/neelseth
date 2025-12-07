@@ -364,7 +364,7 @@ export const blogs: Blog[] = [
 
   // Here is my first AI slop post - Read the raw chat and thoughts with AI, here is the exported chat with GPT-5 and web research: https://chatgpt.com/share/68fe5c0a-68d8-8010-99ee-d36d67cdf49a
 
-  // It took me 20 minutes to research and structure my thoughts, to write this, as i love following global politics and have been following since last 10–12 years.
+  // It took me 20 minutes to research and structure my thoughts, to write this, as i love following global politics and have been following since last 10,12 years.
 
   // **THIS IS NOT FINANCIAL ADVICE, JUST MY PERSONAL ANALYSIS AND WHAT I FEEL WILL HAPPEN**
 
@@ -374,7 +374,7 @@ export const blogs: Blog[] = [
 
   // ## Assumption (This is important / this assumption is based on my own personal beliefs, trends and news i consume)
 
-  // - Over the next 2–15 years, the global money system will change.
+  // - Over the next 2,15 years, the global money system will change.
   // - Central banks are buying record amounts of gold, India has started accepting silver for loans, and crypto - once meant to be "people's money" - is now dominated by large institutions and governments.
   // - This isn't about hype. It's about trust, and where everyday people can safely store value when paper promises stop working.
 
@@ -456,7 +456,7 @@ export const blogs: Blog[] = [
   // Reality: it's heavily concentrated.
 
   // - The top 0.03% of wallets (about 17,000 addresses) control over 60% of all Bitcoin.
-  // - Only 1–1.5 million people hold more than $100,000 worth of BTC.
+  // - Only 1,1.5 million people hold more than $100,000 worth of BTC.
   // - Around 56 million people own less than 0.1 BTC  -  roughly under $10,000 each.
   // - The median wallet balance is below 0.01 BTC (~$1,000).
 
@@ -486,7 +486,7 @@ export const blogs: Blog[] = [
 
   // ## 4) Gold vs. Crypto: Which is truly decentralized?
 
-  // ### Gold and Silver – The People's Asset
+  // ### Gold and Silver , The People's Asset
 
   // - Indian families alone hold over 26,000 tonnes of gold  -  more than all central banks combined.
   // - Chinese, Middle Eastern, and Western households together hold even more.
@@ -494,7 +494,7 @@ export const blogs: Blog[] = [
 
   // Gold is already naturally decentralized. It's spread across billions of hands, across every continent, no passwords, no custodians, no "internet connection required."
 
-  // ### Bitcoin – The Institution's Asset
+  // ### Bitcoin , The Institution's Asset
 
   // - Less than 2 million people hold meaningful BTC amounts.
   // - ETFs, corporations, and governments dominate total supply.
@@ -522,15 +522,15 @@ export const blogs: Blog[] = [
 
   // ---
 
-  // ## 6) How normal savers (45–55) can de-risk
+  // ## 6) How normal savers (45,55) can de-risk
 
   // (Not advice, just logic.)
 
   // - 60% in normal investments you understand (mutual funds, SIPs, productive property).
-  // - 20–30% in physical gold/silver, or gold ETFs and sovereign gold bonds.
+  // - 20,30% in physical gold/silver, or gold ETFs and sovereign gold bonds.
   // - 10% in liquid reserves (cash or short FDs).
 
-  // Shift gradually  -  move 5–10% every few months.
+  // Shift gradually  -  move 5,10% every few months.
   // The goal isn't to abandon modern finance. It's to balance paper wealth with real wealth.
 
   // Analogy: Don't throw away your smartphone  -  just keep a torch handy in case the lights go out.
@@ -558,15 +558,15 @@ export const blogs: Blog[] = [
 
   // ## SOURCES
 
-  // - World Gold Council – Gold Demand Trends Q1 2025: https://gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q1-2025
-  // - Reuters – India Central Bank's Gold Tops $100 B: https://reuters.com/world/india/india-central-banks-gold-pile-tops-100-billion-surging-bullion-prices-2025-10-17/
-  // - Upstox – RBI Silver Collateral Rules 2025: https://upstox.com/news/personal-finance/latest-updates/can-you-take-a-loan-with-silver-as-collateral-here-is-what-the-rbi-rules-say/article-183523/
-  // - BitInfoCharts – Bitcoin Distribution: https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html
-  // - Bitbo.io – Bitcoin Holdings by Country/Company: https://bitbo.io/treasuries/countries/
-  // - BlackRock – iShares Bitcoin Trust (IBIT): https://blackrock.com/us/financial-professionals/products/333011/ishares-bitcoin-trust-etf
-  // - SEC – Spot Bitcoin ETF Approval Statement (2024): https://sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023
-  // - U.S. Department of Justice – Colonial Pipeline Seizure Press Release: https://justice.gov/archives/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside
-  // - U.S. Treasury – Tornado Cash Delisting 2025: https://home.treasury.gov/news/press-releases/sb0057`
+  // - World Gold Council , Gold Demand Trends Q1 2025: https://gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q1-2025
+  // - Reuters , India Central Bank's Gold Tops $100 B: https://reuters.com/world/india/india-central-banks-gold-pile-tops-100-billion-surging-bullion-prices-2025-10-17/
+  // - Upstox , RBI Silver Collateral Rules 2025: https://upstox.com/news/personal-finance/latest-updates/can-you-take-a-loan-with-silver-as-collateral-here-is-what-the-rbi-rules-say/article-183523/
+  // - BitInfoCharts , Bitcoin Distribution: https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html
+  // - Bitbo.io , Bitcoin Holdings by Country/Company: https://bitbo.io/treasuries/countries/
+  // - BlackRock , iShares Bitcoin Trust (IBIT): https://blackrock.com/us/financial-professionals/products/333011/ishares-bitcoin-trust-etf
+  // - SEC , Spot Bitcoin ETF Approval Statement (2024): https://sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023
+  // - U.S. Department of Justice , Colonial Pipeline Seizure Press Release: https://justice.gov/archives/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside
+  // - U.S. Treasury , Tornado Cash Delisting 2025: https://home.treasury.gov/news/press-releases/sb0057`
   // },
   {
     title: "The Real Cost of SEO: A Practical Guide to Ranking in 2025",
@@ -1035,7 +1035,7 @@ export const testimonials: Testimonial[] = [
     id: 8,
     name: "Vicky Kathuria",
     designation: "Senior Marketing Advisor Homefeild",
-    content: "Idea: Build a small live tool during a meeting — something simple but useful, like a blog topic generator or keyword search helper. Goal: Show how quick and practical tool-building can be in real-time.",
+    content: "Idea: Build a small live tool during a meeting - something simple but useful, like a blog topic generator or keyword search helper. Goal: Show how quick and practical tool-building can be in real-time.",
     linkedinUrl: "https://www.linkedin.com/in/vickykathuria/",
     avatar: "/reviewers_images/vicky.jpg",
     sessionId: 1,

@@ -12,6 +12,7 @@ export interface Experience {
   achievements?: string[]
   projects?: string[]
   current?: boolean
+  parentCompany?: string
 }
 
 export interface Project {

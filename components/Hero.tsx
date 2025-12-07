@@ -34,14 +34,17 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-3">
             {personalInfo.name}
           </h1>
-          <h2 className="text-2xl md:text-3xl text-muted-foreground mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             {personalInfo.title}
           </h2>
-          <p className="text-lg max-w-2xl mx-auto mb-4 text-muted-foreground">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-3">
+            {personalInfo.subtitle}
+          </p>
+          <p className="text-lg max-w-2xl mx-auto mb-6 text-muted-foreground">
             {personalInfo.bio}
           </p>
 
-          <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="flex items-center justify-center gap-4 mb-8">
             <span className="flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin className="w-4 h-4" />
               {personalInfo.location}
@@ -50,6 +53,23 @@ export default function Hero() {
               <Mail className="w-4 h-4" />
               {personalInfo.email}
             </span>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Link
+              href={personalInfo.calendlyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors text-center"
+            >
+              Work with me
+            </Link>
+            <Link
+              href="#learn"
+              className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/80 transition-colors text-center"
+            >
+              Learn AI Tools (Free)
+            </Link>
           </div>
 
           <div className="flex gap-4 justify-center">

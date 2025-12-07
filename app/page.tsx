@@ -1,5 +1,8 @@
 import Navigation from "@/components/Navigation"
 import Hero from "@/components/Hero"
+import WhatIDo from "@/components/WhatIDo"
+import Outcomes from "@/components/Outcomes"
+import About from "@/components/About"
 import Experience from "@/components/Experience"
 import Education from "@/components/Education"
 import Projects from "@/components/Projects"
@@ -15,6 +18,8 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navigation />
       <Hero />
+      <WhatIDo />
+      <Outcomes />
       <Experience />
       <Projects />
       <Learn />
@@ -23,6 +28,7 @@ export default function Home() {
       <OpenSource />
       <Blogs />
       <Skills />
+      <About />
       <Contact />
     </main>
   );

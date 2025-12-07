@@ -10,13 +10,16 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { href: "#about", label: "About" },
+    { href: "#what-i-do", label: "What I Do" },
+    { href: "#outcomes", label: "Proof" },
     { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
     { href: "#learn", label: "Learn" },
+    { href: "#education", label: "Education" },
     { href: "#opensource", label: "Open Source" },
     { href: "#blogs", label: "Blogs" },
     { href: "#skills", label: "Skills" },
+    { href: "#about", label: "My Story" },
     { href: "#contact", label: "Contact" }
   ]
 

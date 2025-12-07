@@ -9,7 +9,7 @@ import { useState, useRef, useEffect } from "react"
 
 export default function Testimonials() {
   const [filteredTestimonials, setFilteredTestimonials] = useState(testimonials)
-  const [selectedSession, setSelectedSession] = useState<'all' | 1 | 2>('all')
+  const [selectedSession, setSelectedSession] = useState<'all' | 1 | 2 | 3>('all')
   const [sortBy, setSortBy] = useState<'latest' | 'rating' | 'hasReview'>('latest')
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
@@ -36,14 +36,19 @@ export default function Testimonials() {
       if (sortBy === 'latest') {
         // Convert date strings to comparable values
         const dateOrder: Record<string, number> = {
-          '2 days ago': 0,
-          'Nov 18': 1,
-          'Nov 17': 2,
-          'Nov 16': 3,
-          'Nov 6': 4,
-          'Nov 5': 5,
-          'Nov 3': 6,
-          'Nov 2': 7
+          'Dec 4': 0,
+          'Dec 3': 1,
+          'Dec 2': 2,
+          'Dec 1': 3,
+          'Nov 30': 4,
+          '2 days ago': 5,
+          'Nov 18': 6,
+          'Nov 17': 7,
+          'Nov 16': 8,
+          'Nov 6': 9,
+          'Nov 5': 10,
+          'Nov 3': 11,
+          'Nov 2': 12
         }
         return (dateOrder[a.date] || 999) - (dateOrder[b.date] || 999)
       } else if (sortBy === 'rating') {
@@ -144,12 +149,13 @@ export default function Testimonials() {
               <Filter className="w-4 h-4 text-muted-foreground" />
               <select
                 value={selectedSession}
-                onChange={(e) => setSelectedSession(e.target.value === 'all' ? 'all' : Number(e.target.value) as 1 | 2)}
+                onChange={(e) => setSelectedSession(e.target.value === 'all' ? 'all' : Number(e.target.value) as 1 | 2 | 3)}
                 className="px-3 py-1.5 rounded-lg border bg-background text-sm"
               >
                 <option value="all">All Sessions ({testimonials.length})</option>
                 <option value="1">Session 1 ({testimonials.filter(t => t.sessionId === 1).length})</option>
                 <option value="2">Session 2 ({testimonials.filter(t => t.sessionId === 2).length})</option>
+                <option value="3">Session 3 ({testimonials.filter(t => t.sessionId === 3).length})</option>
               </select>
             </div>
             <div className="flex items-center gap-2">
