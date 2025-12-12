@@ -27,7 +27,7 @@ export default function Blogs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow"
+                className="bg-card border-2 p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -39,7 +39,7 @@ export default function Blogs() {
                     })}</span>
                   </div>
                   {blog.featured && (
-                    <span className="px-2 py-1 text-xs bg-primary text-primary-foreground rounded">
+                    <span className="px-2 py-1 text-xs bg-primary text-primary-foreground">
                       Featured
                     </span>
                   )}
@@ -50,7 +50,7 @@ export default function Blogs() {
                     {blog.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-1 text-xs bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400 rounded-full font-medium"
+                        className="px-2 py-1 text-xs bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400 font-medium"
                       >
                         {tag}
                       </span>

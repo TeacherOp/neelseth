@@ -71,7 +71,7 @@ export const experiences: Experience[] = [
     logo: "/shipstationlogo.svg",
     position: "Co-Founder",
     type: "Self-employed",
-    duration: "Jan 2024 - Present",
+    duration: "Jan 2024 - Feb 2025",
     location: "Bengaluru, Karnataka, India",
     description: "Co-founded while still at Dukaan (before leaving in May 2024). AI-powered platform that automates the end-to-end process of designing, coding, deploying, and hosting personal portfolios and websites. Users describe what they want, AI generates the complete website. Started as a side project testing AI capabilities for code generation - proved the thesis that you can build products faster with AI.",
     achievements: [

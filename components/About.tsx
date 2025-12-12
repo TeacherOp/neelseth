@@ -36,13 +36,13 @@ export default function About() {
               >
                 <Accordion.Item
                   value={`item-${item.id}`}
-                  className="bg-card border rounded-lg overflow-hidden"
+                  className="bg-card border-2 overflow-hidden"
                 >
                   <Accordion.Header>
                     <Accordion.Trigger className="group flex items-start justify-between w-full px-6 py-5 text-left hover:bg-muted/50 transition-colors">
                       <div className="flex-1">
                         <div className="mb-3">
-                          <span className="inline-block text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded mb-2">
+                          <span className="inline-block text-xs font-mono text-primary bg-primary/10 px-2 py-1 mb-2 border border-primary/20">
                             {item.period}
                           </span>
                           <h3 className="text-lg font-bold leading-tight">

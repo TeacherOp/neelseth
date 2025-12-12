@@ -39,10 +39,10 @@ export default function Outcomes() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card border rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+                  className="bg-card border-2 p-6 text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
+                    <div className="p-3 bg-primary/10 border border-primary/20">
                       <Icon className="w-8 h-8 text-primary" />
                     </div>
                   </div>

@@ -38,10 +38,10 @@ export default function WhatIDo() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card border rounded-lg p-8 hover:shadow-lg transition-shadow"
+                  className="bg-card border-2 p-8 hover:shadow-lg transition-shadow"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg shrink-0">
+                    <div className="p-3 bg-primary/10 shrink-0 border border-primary/20">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
                     <div>

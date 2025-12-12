@@ -106,7 +106,7 @@ export default function BlogArticleModal({ blog, isOpen, onClose }: BlogArticleM
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", duration: 0.5 }}
-              className="bg-background border rounded-lg shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden pointer-events-auto"
+              className="bg-background border-2 shadow-2xl max-w-4xl w-full max-h-[85vh] overflow-hidden pointer-events-auto"
             >
               {/* Header */}
               <div className="sticky top-0 bg-background/95 backdrop-blur-sm border-b px-6 py-4 flex items-start justify-between">
@@ -116,7 +116,7 @@ export default function BlogArticleModal({ blog, isOpen, onClose }: BlogArticleM
                       {blog.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 text-xs bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400 rounded-full font-semibold"
+                          className="px-3 py-1 text-xs bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400 font-semibold"
                         >
                           {tag}
                         </span>
@@ -147,7 +147,7 @@ export default function BlogArticleModal({ blog, isOpen, onClose }: BlogArticleM
                 </div>
                 <button
                   onClick={onClose}
-                  className="p-2 rounded-full hover:bg-secondary transition-colors"
+                  className="p-2 hover:bg-secondary transition-colors border border-border"
                   aria-label="Close"
                 >
                   <X className="w-5 h-5" />
@@ -252,7 +252,7 @@ export default function BlogArticleModal({ blog, isOpen, onClose }: BlogArticleM
               <div className="sticky bottom-0 bg-background/95 backdrop-blur-sm border-t px-6 py-4">
                 <button
                   onClick={onClose}
-                  className="w-full md:w-auto px-6 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors font-medium"
+                  className="w-full md:w-auto px-6 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors font-medium border-2 border-primary"
                 >
                   Close Article
                 </button>

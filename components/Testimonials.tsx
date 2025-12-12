@@ -10,7 +10,7 @@ import { useState, useRef, useEffect } from "react"
 export default function Testimonials() {
   const [filteredTestimonials, setFilteredTestimonials] = useState(testimonials)
   const [selectedSession, setSelectedSession] = useState<'all' | 1 | 2 | 3>('all')
-  const [sortBy, setSortBy] = useState<'latest' | 'rating' | 'hasReview'>('latest')
+  const [sortBy, setSortBy] = useState<'latest' | 'rating' | 'hasReview'>('hasReview')
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
@@ -150,7 +150,7 @@ export default function Testimonials() {
               <select
                 value={selectedSession}
                 onChange={(e) => setSelectedSession(e.target.value === 'all' ? 'all' : Number(e.target.value) as 1 | 2 | 3)}
-                className="px-3 py-1.5 rounded-lg border bg-background text-sm"
+                className="px-3 py-1.5 border-2 bg-background text-sm"
               >
                 <option value="all">All Sessions ({testimonials.length})</option>
                 <option value="1">Session 1 ({testimonials.filter(t => t.sessionId === 1).length})</option>
@@ -163,7 +163,7 @@ export default function Testimonials() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
-                className="px-3 py-1.5 rounded-lg border bg-background text-sm"
+                className="px-3 py-1.5 border-2 bg-background text-sm"
               >
                 <option value="latest">Latest First</option>
                 <option value="rating">Highest Rating</option>
@@ -178,7 +178,7 @@ export default function Testimonials() {
             {canScrollLeft && (
               <button
                 onClick={() => scroll('left')}
-                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-background/90 shadow-lg hover:bg-background transition-colors"
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-background/90 shadow-lg hover:bg-background transition-colors border-2 border-border"
                 aria-label="Scroll left"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -187,7 +187,7 @@ export default function Testimonials() {
             {canScrollRight && (
               <button
                 onClick={() => scroll('right')}
-                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-background/90 shadow-lg hover:bg-background transition-colors"
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-background/90 shadow-lg hover:bg-background transition-colors border-2 border-border"
                 aria-label="Scroll right"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -207,7 +207,7 @@ export default function Testimonials() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: Math.min(index * 0.05, 0.3) }}
-                  className="flex-shrink-0 w-80 bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow relative"
+                  className="flex-shrink-0 w-80 bg-card border-2 p-6 hover:shadow-lg transition-shadow relative"
                 >
                   <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/10" />
 
@@ -275,23 +275,23 @@ export default function Testimonials() {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mt-8">
-            <div className="bg-card border rounded-lg p-4 text-center">
+            <div className="bg-card border-2 p-4 text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">{testimonials.length}</p>
               <p className="text-xs md:text-sm text-muted-foreground">Total Reviews</p>
             </div>
-            <div className="bg-card border rounded-lg p-4 text-center">
+            <div className="bg-card border-2 p-4 text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">
                 {testimonials.filter(t => t.content).length}
               </p>
               <p className="text-xs md:text-sm text-muted-foreground">Written Reviews</p>
             </div>
-            <div className="bg-card border rounded-lg p-4 text-center">
+            <div className="bg-card border-2 p-4 text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">
                 {testimonials.filter(t => t.rating === 5).length}
               </p>
               <p className="text-xs md:text-sm text-muted-foreground">5-Star Reviews</p>
             </div>
-            <div className="bg-card border rounded-lg p-4 text-center">
+            <div className="bg-card border-2 p-4 text-center">
               <p className="text-2xl md:text-3xl font-bold text-primary">{aggregateRating.toFixed(1)}/5</p>
               <p className="text-xs md:text-sm text-muted-foreground">Average Rating</p>
             </div>

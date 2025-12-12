@@ -4,48 +4,50 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
+    /* Classical Scholar - Soft Brutalism Theme */
+    --background: 36 45% 96%;           /* Aged parchment #FAF6F0 */
+    --foreground: 36 11% 9%;            /* Deep ink #1A1815 */
+    --card: 38 37% 95%;                 /* Warm card #F8F4ED */
+    --card-foreground: 36 11% 9%;
+    --popover: 38 37% 95%;
+    --popover-foreground: 36 11% 9%;
+    --primary: 0 41% 39%;               /* Classical burgundy #8B3A3A */
+    --primary-foreground: 36 45% 96%;
+    --secondary: 38 35% 89%;            /* Antiqued cream #EDE6DA */
+    --secondary-foreground: 36 11% 9%;
+    --muted: 38 30% 91%;
+    --muted-foreground: 34 11% 38%;     /* Warm muted text */
+    --accent: 0 41% 39%;                /* Burgundy accent */
+    --accent-foreground: 36 45% 96%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 36 45% 96%;
+    --border: 30 16% 70%;               /* Aged bronze border #7D6C5B lightened */
+    --input: 38 35% 89%;
+    --ring: 0 41% 39%;
+    --radius: 0;                        /* Brutalist: no rounded corners */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Dark mode - Classical Scholar inverted */
+    --background: 30 15% 10%;           /* Dark parchment */
+    --foreground: 36 30% 90%;           /* Light cream text */
+    --card: 30 12% 14%;
+    --card-foreground: 36 30% 90%;
+    --popover: 30 12% 14%;
+    --popover-foreground: 36 30% 90%;
+    --primary: 0 50% 55%;               /* Lighter burgundy for dark mode */
+    --primary-foreground: 30 15% 10%;
+    --secondary: 30 12% 18%;
+    --secondary-foreground: 36 30% 90%;
+    --muted: 30 10% 20%;
+    --muted-foreground: 34 15% 60%;
+    --accent: 0 50% 55%;
+    --accent-foreground: 30 15% 10%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 36 30% 90%;
+    --border: 30 12% 25%;
+    --input: 30 12% 18%;
+    --ring: 0 50% 55%;
   }
 }
 
@@ -81,15 +83,24 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent;
+    @apply text-primary;
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl;
+    @apply transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg;
   }
 
   .glass {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    @apply bg-card/80 backdrop-blur-sm border-2 border-border;
+  }
+
+  /* Brutalist shadow - warm tinted */
+  .shadow-brutal {
+    box-shadow: 4px 4px 0 hsl(30 16% 42%);
+  }
+
+  .shadow-brutal-sm {
+    box-shadow: 2px 2px 0 hsl(30 16% 42%);
   }
 }
 
@@ -98,18 +109,18 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-muted;
+  @apply bg-secondary;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-muted-foreground/20 rounded-full;
+  @apply bg-border;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-muted-foreground/30;
+  @apply bg-muted-foreground/50;
 }

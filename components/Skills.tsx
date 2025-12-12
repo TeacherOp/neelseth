@@ -30,7 +30,7 @@ export default function Skills() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border rounded-lg p-6"
+                className="bg-card border-2 p-6"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <category.icon className="w-6 h-6 text-primary" />
@@ -41,7 +41,7 @@ export default function Skills() {
                   {category.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1.5 bg-secondary rounded-lg text-sm hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
+                      className="px-3 py-1.5 bg-secondary text-sm hover:bg-primary hover:text-primary-foreground transition-colors cursor-default border border-border"
                     >
                       {skill}
                     </span>

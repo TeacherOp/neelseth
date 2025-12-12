@@ -50,7 +50,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
-      className="bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-shadow group"
+      className="bg-card border-2 overflow-hidden hover:shadow-lg transition-shadow group"
     >
       <div className="relative h-40 bg-gradient-to-br from-primary/10 to-secondary/10">
         {project.banner ? (
@@ -75,7 +75,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
               alt={project.title}
               width={28}
               height={28}
-              className="rounded bg-white p-0.5 shrink-0"
+              className="bg-white p-0.5 shrink-0 border border-border"
             />
           )}
           <h4 className="text-lg font-bold group-hover:text-primary transition-colors">
@@ -91,7 +91,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           {project.tech.slice(0, 3).map((tech: string, i: number) => (
             <span
               key={i}
-              className="px-2 py-0.5 text-xs bg-secondary/60 rounded"
+              className="px-2 py-0.5 text-xs bg-secondary/60"
             >
               {tech}
             </span>

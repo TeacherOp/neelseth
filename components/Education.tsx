@@ -24,7 +24,7 @@ export default function Education() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow"
+                className="bg-card border-2 p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-start justify-between mb-4">
                   {edu.logo ? (
@@ -33,10 +33,10 @@ export default function Education() {
                       alt={edu.institution}
                       width={48}
                       height={48}
-                      className="rounded-lg bg-white p-1"
+                      className="bg-white p-1 border border-border"
                     />
                   ) : (
-                    <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center">
+                    <div className="w-12 h-12 bg-secondary flex items-center justify-center border border-border">
                       <GraduationCap className="w-6 h-6 text-muted-foreground" />
                     </div>
                   )}

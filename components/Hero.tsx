@@ -8,7 +8,7 @@ import { personalInfo } from "@/lib/data"
 
 export default function Hero() {
   return (
-    <section className="flex items-center justify-center px-6 py-12 md:py-16">
+    <section className="flex items-center justify-center px-6 pt-20 pb-12 md:pt-24 md:pb-16">
       <div className="max-w-7xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,7 +26,7 @@ export default function Hero() {
               alt="Neel Seth"
               width={200}
               height={200}
-              className="rounded-full border-4 border-primary/20 shadow-xl"
+              className="border-4 border-primary/30"
               priority
             />
           </motion.div>
@@ -60,15 +60,15 @@ export default function Hero() {
               href={personalInfo.calendlyLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors text-center"
+              className="px-8 py-3 bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors text-center border-2 border-primary"
             >
               Book a call
             </Link>
             <Link
               href="#learn"
-              className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/80 transition-colors text-center"
+              className="px-8 py-3 bg-secondary text-secondary-foreground font-semibold hover:bg-secondary/80 transition-colors text-center border-2 border-border"
             >
-              Learn AI Tools (Free)
+              Learn (Free)
             </Link>
           </div>
 
@@ -77,7 +77,7 @@ export default function Hero() {
               href={personalInfo.socials.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+              className="p-3 bg-secondary hover:bg-secondary/80 transition-colors border-2 border-border"
             >
               <Github className="w-5 h-5" />
             </Link>
@@ -85,7 +85,7 @@ export default function Hero() {
               href={personalInfo.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+              className="p-3 bg-secondary hover:bg-secondary/80 transition-colors border-2 border-border"
             >
               <Linkedin className="w-5 h-5" />
             </Link>
@@ -93,7 +93,7 @@ export default function Hero() {
               href={personalInfo.socials.x}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-secondary hover:bg-secondary/80 transition-colors"
+              className="p-3 bg-secondary hover:bg-secondary/80 transition-colors border-2 border-border"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>

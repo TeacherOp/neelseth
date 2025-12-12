@@ -30,7 +30,7 @@ export default function Learn() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-card border rounded-lg p-8 mb-8"
+              className="bg-card border-2 p-8 mb-8"
             >
               <div className="prose prose-sm max-w-none">
                 {teachingStory.origin.content.split('\n\n').map((paragraph, i) => (
@@ -52,7 +52,7 @@ export default function Learn() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-muted/30 border rounded-lg p-6 text-center"
+                  className="bg-muted/30 border-2 p-6 text-center"
                 >
                   <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
                     {stat.metric}
@@ -85,7 +85,7 @@ export default function Learn() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card border rounded-lg p-6"
+                  className="bg-card border-2 p-6"
                 >
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
@@ -118,7 +118,7 @@ export default function Learn() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+                  className="bg-card border-2 overflow-hidden hover:shadow-lg transition-shadow"
                 >
                   <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20">
                     {session.videoUrl && (
@@ -146,7 +146,7 @@ export default function Learn() {
                         {session.topics.slice(0, 3).map((topic, i) => (
                           <span
                             key={i}
-                            className="px-2 py-1 text-xs bg-secondary/60 rounded"
+                            className="px-2 py-1 text-xs bg-secondary/60"
                           >
                             {topic}
                           </span>
@@ -174,7 +174,7 @@ export default function Learn() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-primary/10 border-2 border-primary/20 rounded-lg p-8 text-center"
+            className="bg-primary/10 border-2 border-primary/20 p-8 text-center"
           >
             <Github className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-2xl md:text-3xl font-bold mb-3">
@@ -198,7 +198,7 @@ export default function Learn() {
                 href={teachingStory.cta.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors inline-flex items-center justify-center gap-2"
+                className="px-8 py-3 bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors inline-flex items-center justify-center gap-2 border-2 border-primary"
               >
                 <Github className="w-5 h-5" />
                 {teachingStory.cta.primary}

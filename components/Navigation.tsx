@@ -61,7 +61,7 @@ export default function Navigation() {
             href={personalInfo.calendlyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:block px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+            className="hidden md:block px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors border-2 border-primary"
           >
             Book a Call
           </Link>
@@ -69,7 +69,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-secondary transition-colors"
+            className="md:hidden p-2 hover:bg-secondary transition-colors border-2 border-border"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -103,7 +103,7 @@ export default function Navigation() {
                 href={personalInfo.calendlyLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 px-4 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-center"
+                className="mt-4 px-4 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center border-2 border-primary"
                 onClick={closeMobileMenu}
               >
                 Book a Call

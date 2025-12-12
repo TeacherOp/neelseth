@@ -70,7 +70,7 @@ export default function Experience() {
                       viewport={{ once: true }}
                       className="mb-4"
                     >
-                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-lg border border-border">
+                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/50 border-2 border-border">
                         <Building2 className="w-4 h-4 text-primary" />
                         <span className="text-sm font-semibold text-foreground">{exp.parentCompany}</span>
                         <span className="text-xs text-muted-foreground">{getParentCompanyDateRange(exp.parentCompany!)}</span>
@@ -85,7 +85,7 @@ export default function Experience() {
                   >
                     <Accordion.Item
                       value={`exp-${exp.id}`}
-                      className="bg-card border rounded-lg overflow-hidden"
+                      className="bg-card border-2 overflow-hidden"
                     >
                       <Accordion.Header>
                         <Accordion.Trigger className="group flex items-start justify-between w-full px-6 py-5 text-left hover:bg-muted/50 transition-colors">
@@ -97,21 +97,21 @@ export default function Experience() {
                                   alt={exp.company}
                                   width={48}
                                   height={48}
-                                  className="rounded-lg bg-white p-1"
+                                  className="bg-white p-1 border border-border"
                                 />
                               ) : (
-                                <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center">
+                                <div className="w-12 h-12 bg-secondary flex items-center justify-center border border-border">
                                   <Building2 className="w-6 h-6 text-muted-foreground" />
                                 </div>
                               )}
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="flex flex-wrap items-center gap-2 mb-1">
-                                <span className="text-xs font-mono text-primary bg-primary/10 px-2 py-0.5 rounded">
+                                <span className="text-xs font-mono text-primary bg-primary/10 px-2 py-0.5 border border-primary/20">
                                   {exp.duration}
                                 </span>
                                 {exp.current && (
-                                  <span className="px-2 py-0.5 text-xs bg-green-100 text-green-800 rounded-full">
+                                  <span className="px-2 py-0.5 text-xs bg-primary/15 text-primary font-medium">
                                     Current
                                   </span>
                                 )}
@@ -174,7 +174,7 @@ export default function Experience() {
                               {exp.skills.map((skill, i) => (
                                 <span
                                   key={i}
-                                  className="px-3 py-1 text-xs bg-secondary rounded-full"
+                                  className="px-3 py-1 text-xs bg-secondary border border-border"
                                 >
                                   {skill}
                                 </span>

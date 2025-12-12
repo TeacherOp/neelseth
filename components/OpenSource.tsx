@@ -46,7 +46,7 @@ export default function OpenSource() {
           </p>
 
           {/* GitHub Activity Calendar */}
-          <div className="bg-card border rounded-lg p-6 mb-8 overflow-x-auto">
+          <div className="bg-card border-2 p-6 mb-8 overflow-x-auto">
             <div className="w-full max-w-4xl mx-auto">
               <h3 className="text-lg font-semibold mb-4 flex items-center justify-center gap-2">
                 <Github className="w-5 h-5" />
@@ -79,7 +79,7 @@ export default function OpenSource() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow"
+                className="bg-card border-2 p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex items-center gap-3">
@@ -87,7 +87,7 @@ export default function OpenSource() {
                     <h3 className="text-xl font-bold">{repo.title}</h3>
                   </div>
                   {repo.featured && (
-                    <span className="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded">
+                    <span className="px-2 py-1 text-xs bg-yellow-100 text-yellow-800">
                       Featured
                     </span>
                   )}
@@ -119,7 +119,7 @@ export default function OpenSource() {
                   {repo.topics.map((topic) => (
                     <span
                       key={topic}
-                      className="px-2 py-1 text-xs bg-secondary rounded"
+                      className="px-2 py-1 text-xs bg-secondary"
                     >
                       {topic}
                     </span>
