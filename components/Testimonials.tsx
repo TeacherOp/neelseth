@@ -274,26 +274,26 @@ export default function Testimonials() {
           </div>
 
           {/* Stats */}
-          <div className="grid md:grid-cols-4 gap-6 mt-8">
-            <div className="text-center">
-              <p className="text-3xl font-bold text-primary">{testimonials.length}</p>
-              <p className="text-sm text-muted-foreground">Total Reviews</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mt-8">
+            <div className="bg-card border rounded-lg p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-primary">{testimonials.length}</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Total Reviews</p>
             </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-primary">
+            <div className="bg-card border rounded-lg p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-primary">
                 {testimonials.filter(t => t.content).length}
               </p>
-              <p className="text-sm text-muted-foreground">Written Reviews</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Written Reviews</p>
             </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-primary">
+            <div className="bg-card border rounded-lg p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-primary">
                 {testimonials.filter(t => t.rating === 5).length}
               </p>
-              <p className="text-sm text-muted-foreground">5-Star Reviews</p>
+              <p className="text-xs md:text-sm text-muted-foreground">5-Star Reviews</p>
             </div>
-            <div className="text-center">
-              <p className="text-3xl font-bold text-primary">{aggregateRating.toFixed(1)}/5</p>
-              <p className="text-sm text-muted-foreground">Average Rating</p>
+            <div className="bg-card border rounded-lg p-4 text-center">
+              <p className="text-2xl md:text-3xl font-bold text-primary">{aggregateRating.toFixed(1)}/5</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Average Rating</p>
             </div>
           </div>
         </motion.div>

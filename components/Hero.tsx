@@ -8,7 +8,7 @@ import { personalInfo } from "@/lib/data"
 
 export default function Hero() {
   return (
-    <section className="h-[70vh] flex items-center justify-center px-6 pt-16">
+    <section className="flex items-center justify-center px-6 py-12 md:py-16">
       <div className="max-w-7xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function Hero() {
             {personalInfo.bio}
           </p>
 
-          <div className="flex items-center justify-center gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-6">
             <span className="flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin className="w-4 h-4" />
               {personalInfo.location}
@@ -55,14 +55,14 @@ export default function Hero() {
             </span>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
             <Link
               href={personalInfo.calendlyLink}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors text-center"
             >
-              Work with me
+              Book a call
             </Link>
             <Link
               href="#learn"

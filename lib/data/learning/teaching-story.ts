@@ -36,10 +36,10 @@ The first cohort had 50 people. Then 100. Then requests for more sessions. Now t
     title: "How It Works",
     description: "All sessions are free and available on GitHub. No gatekeeping, no paywalls.",
     details: [
-      "📹 Full session recordings on YouTube",
-      "💻 All code samples and exercises on GitHub",
-      "📚 Step-by-step guides for every project",
-      "🛠️ Real tools you can deploy and use immediately"
+      "Full session recordings on YouTube",
+      "All code samples and exercises on GitHub",
+      "Step-by-step guides for every project",
+      "Real tools you can deploy and use immediately"
     ]
   },
   cta: {
