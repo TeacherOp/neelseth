@@ -22,9 +22,24 @@ export default function Learn() {
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
               Learn how to build AI tools & Agents
             </h2>
-            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
               I didn&apos;t plan to teach. I just shared how I was building with AI-and it turned into a free course.
             </p>
+
+            <div className="flex flex-wrap gap-3 justify-center mb-8">
+              <Link
+                href="/blog/building-with-ai-roadmap"
+                className="px-4 py-2 bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors border-2 border-primary"
+              >
+                My Road Map to build with AI
+              </Link>
+              <Link
+                href="/blog/mental-modal-prompting"
+                className="px-4 py-2 bg-secondary text-secondary-foreground font-medium text-sm hover:bg-secondary/80 transition-colors border-2 border-border"
+              >
+                Mental Modal Before Prompting the right way
+              </Link>
+            </div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
