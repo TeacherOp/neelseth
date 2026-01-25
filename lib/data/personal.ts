@@ -10,5 +10,5 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/neel-seth-323827138/",
     x: "https://x.com/neelseth"
   },
-  calendlyLink: "https://calendly.com/neelseth48/30-min-meeting"
+  calendlyLink: "https://calendly.com/admin-teacherop/30min"
 }
