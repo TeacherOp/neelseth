@@ -2,6 +2,22 @@ import type { LearnSession } from '@/lib/types'
 
 export const learnSessions: LearnSession[] = [
   {
+    id: 0,
+    title: "Introduction: The AI Learning Roadmap",
+    description: "A complete roadmap for learning to build with AI. Covers the key concepts, tools, and progression path you need to go from zero to building production-ready AI tools and agents.",
+    date: "November 2025",
+    status: "completed",
+    videoUrl: "https://www.youtube.com/embed/m9FZIM9icc8",
+    topics: [
+      "AI learning path and progression",
+      "Key tools and frameworks overview",
+      "How to approach building with AI",
+      "Setting expectations and prerequisites"
+    ],
+    technologies: ["AI", "LLMs", "Roadmap"],
+    duration: "1 hour"
+  },
+  {
     id: 1,
     title: "Session 1: API Fundamentals & Business Applications",
     description: "Master the foundations of AI tool development with hands-on API implementation, moving from basic calls to production-ready solutions that solve real business problems.",

@@ -125,7 +125,7 @@ export default function Learn() {
               Full recordings and code samples-completely free
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {completedSessions.map((session, index) => (
                 <motion.div
                   key={session.id}
@@ -169,15 +169,17 @@ export default function Learn() {
                       </div>
                     </div>
 
-                    <Link
-                      href={session.githubUrl || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
-                    >
-                      <Github className="w-4 h-4" />
-                      View Code & Materials
-                    </Link>
+                    {session.githubUrl && (
+                      <Link
+                        href={session.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                      >
+                        <Github className="w-4 h-4" />
+                        View Code & Materials
+                      </Link>
+                    )}
                   </div>
                 </motion.div>
               ))}
